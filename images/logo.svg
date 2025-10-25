@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle (Soft Glow) -->
+  <circle cx="60" cy="60" r="55" fill="url(#grad-bg)" opacity="0.15"/>
+  
+  <!-- Main Lens Circle -->
+  <circle cx="60" cy="60" r="45" stroke="url(#grad-main)" stroke-width="6" fill="none"/>
+  
+  <!-- Inner Lens (AI Core) -->
+  <circle cx="60" cy="60" r="25" fill="url(#grad-core)"/>
+  
+  <!-- Social Media Nodes (Orbiting) -->
+  <g transform="translate(60,60)">
+    <circle r="8" fill="#3b82f6" transform="rotate(0) translate(0,-38)">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="6" fill="#10b981" transform="rotate(120) translate(0,-38)">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="7" fill="#f59e0b" transform="rotate(240) translate(0,-38)">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="14s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Lens Reflection -->
+  <path d="M50 45 Q55 40 60 45 L60 55 Q55 50 50 55 Z" fill="white" opacity="0.6"/>
+
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="grad-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a56db"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="grad-main" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a56db"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="grad-core" x1="30%" y1="30%" x2="70%" y2="70%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1e40af"/>
+    </linearGradient>
+  </defs>
+</svg>
