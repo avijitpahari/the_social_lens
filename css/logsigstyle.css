@@ -188,7 +188,7 @@
      display: none;
  }
 
- .btn {
+ .btn,.mobile-toggle {
      width: 100%;
      padding: 14px;
      margin-top: 15px;
@@ -230,20 +230,6 @@
 
  .mobile-toggle {
      display: none;
-     width: 70px;
-     height: 28px;
-     padding: 4px 12px;
-     margin: 10px auto 0;
-     font-size: 0.75rem;
-     font-weight: 600;
-     text-transform: uppercase;
-     letter-spacing: 0.6px;
-     border-radius: 20px;
-     background: #e0e7ff;
-     color: #1a56db;
-     border: none;
-     cursor: pointer;
-     transition: background .2s;
  }
 
  .mobile-toggle:hover {
@@ -339,6 +325,12 @@
  .btn-ghost:hover {
      background: rgba(255, 255, 255, .2);
  }
+
+ @media (max-width:340px){
+     .brand span {
+     font-size: 1.67rem;
+     }
+  }
 
  @media (max-width:768px) {
      .container {
