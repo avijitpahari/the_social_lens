@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .hero-title {
-  color: #c8d6f4; /* Vibrant orange */
+  color: #c8d6f4; 
   text-shadow: 0 4px 15px rgb(7, 76, 196);
 }
 
